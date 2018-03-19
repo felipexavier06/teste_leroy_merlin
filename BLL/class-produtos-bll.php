@@ -16,7 +16,7 @@ class ProdutosBLL {
   * @version 1.0
   */
   public function xlsxArq() {
-    if ( $xlsx = SimpleXLSX::parse( file_get_contents('http://localhost/teste_pindorama/wordpress/wp-content/plugins/products_teste_webdev_leroy.xlsx'), true) ) {
+    if ( $xlsx = SimpleXLSX::parse( file_get_contents('http://localhost/teste_leroy_merlin/wordpress/wp-content/plugins/products_teste_webdev_leroy.xlsx'), true) ) {
       $array_produtos = $xlsx->rows();
       $category = $array_produtos[0][1];
       $array_produtos = $this->remove_index($array_produtos);
