@@ -34,7 +34,7 @@ class ProdutosBLL {
             $this->produtosDao->update($obj_produto);
           }
         }
-      } die();
+      }
     } else {
       echo SimpleXLSX::parse_error();
     }
